@@ -1,0 +1,17 @@
+CREATE TABLE Shoes (Style TEXT PRIMARY KEY, Material TEXT,Size INTEGER, Color TEXT, Heel TEXT);
+
+CREATE TABLE Drinks (id INTEGER PRIMARY KEY, name TEXT, Quantity INTEGER, Package_Size INTEGER);
+
+INSERT INTO Drinks VALUES (1,"Coca_Cola",4,"Case");
+INSERT INTO Drinks VALUES (2,"Mountain_Dew",3,"Bottles");
+INSERT INTO Drinks VALUES (3,"Sparkling_Water",6,"Case");
+INSERT INTO Drinks VALUES (4,"Root_Beer",2,"Bottles");
+
+INSERT INTO Shoes VALUES ("Sneaker","Leather",7.5,"Blue","Flat"); 
+INSERT INTO Shoes VALUES ("Sandal","Canvas",7.5,"Black","Flat");
+INSERT INTO Shoes VALUES ("Cowboy_Boots","Leather",8.5,"Brown","Low");
+INSERT INTO Shoes VALUES ("Pump","Leather",6.5,"Red","High");
+SELECT SUM(Quantity) FROM Drinks;
+SELECT MAX(Quantity) FROM Drinks;
+SELECT * FROM Drinks ORDER BY Quantity ASC;
+SELECT Size =8.5,Color Blue FROM Shoes;
